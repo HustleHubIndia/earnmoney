@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hustle Hub India | Secure Payment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-bolt logo-icon"></i>
+                Hustle Hub <span>India</span>
+            </a>
+            <a href="index.html" class="nav-cta"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </header>
+
+    <main style="padding-top: 120px; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding-bottom: 4rem;">
+        <div class="container container-sm">
+            <div class="conversion-wrapper glass spotlight" style="margin-bottom: 0;">
+                
+                <div class="payment-gateway">
+                    <div class="gateway-header">
+                        <h3><i class="fa-solid fa-qrcode text-gradient"></i> Scan to Pay</h3>
+                        <p>One-time payment of ₹89.00</p>
+                    </div>
+                    
+                    <div class="qr-code-container" style="background: white; padding: 1.5rem; border-radius: 16px; display: inline-block; margin: 2rem 0; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                        <!-- Dynamic QR Code image for UPI Payment -->
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=upi%3A%2F%2Fpay%3Fpa%3Dkamla.48%40superyes%26pn%3DKAMLA%2520YADAV%26am%3D89.00" alt="Scan QR Code to Pay" style="width: 200px; height: 200px; object-fit: contain; margin-bottom: 1rem;">
+                        <div style="color: #333; font-family: 'Inter', sans-serif;">
+                            <p style="font-weight: 700; font-size: 1.15rem; color: #1e293b; margin-bottom: 0.25rem;">Pay ₹89.00 to KAMLA YADAV</p>
+                            <p style="font-size: 0.95rem; color: #64748b; font-weight: 500;">UPI ID: kamla.48@superyes</p>
+                        </div>
+                    </div>
+
+                    <div class="payment-methods" style="margin-top: 0;">
+                        <div class="method" style="flex: 0 1 auto; padding: 0 1rem; width: auto;"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/UPI-Logo-vector.svg" alt="UPI" width="40" style="filter: brightness(0) invert(1);"></div>
+                    </div>
+                </div>
+
+                <div class="form-divider">
+                    <span>STEP 2</span>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Claim Your Access</h3>
+                    <p class="form-desc" style="margin-bottom: 2rem;">Submit your details after successful payment.</p>
+                    <form id="access-form">
+                        <div class="input-group">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" placeholder="Mobile Number (WhatsApp)" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        
+                        <div class="info-note" style="text-align: left;">
+                            <i class="fa-solid fa-circle-info text-blue"></i>
+                            <span>Courses will be delivered via WhatsApp & Email within 4-5 hours of payment verification.</span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-100 glow-button">Submit Details <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="padding: 2rem 0;">
+        <div class="container">
+            <div class="footer-content" style="justify-content: center; flex-direction: column; gap: 1rem;">
+                <p class="copyright">© 2026 Hustle Hub India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
